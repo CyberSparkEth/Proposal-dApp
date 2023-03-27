@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src = "script.js"></script>
+    <title>Voting</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-row">
+            <a href="./index.html" class="logo">Proposal dApp</a>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <button onclick="showLastProposal()" class="proposal" >Последнее голосование</button>
+            <div class="choice-wrapper">
+                <button class="choice-buttons">
+                    Поддерживаю
+                    <button class="result-buttons">0</button>
+                </button>
+                <button class="choice-buttons">
+                    Отказываюсь
+                    <button class="result-buttons">0</button>
+                </button>
+                <button class="choice-buttons">
+                    Воздерживаюсь
+                    <button class="result-buttons">0</button>
+                </button>
+            </div>
+            <div class="state">Статус голосования</div>
+            <button onclick="vote()" class="vote">Голосовать</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <ul class="social">
+                <li class="social__item">
+                    <a href="https://github.com/CyberSparkEth" target="_blank"><img src="./img/gitHub.svg" alt="Link"></a>
+                </li>
+                <li class="social__item">
+                    <a href=https://testnet.bscscan.com/address/0x610DCB0e4d049243a28416a3897eFA85af69C829 
+                    target="_blank">
+                    <img src="./img/binance.svg" alt="Link">
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>© 2023 CyberSparkEth</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

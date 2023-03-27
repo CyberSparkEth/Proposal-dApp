@@ -1,0 +1,171 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Shantell+Sans&display=swap');
+
+/* font-family: 'Climate Crisis', cursive;
+font-family: 'Shantell Sans', cursive; */
+:root {
+    --black: #292929;
+    --withe: #fff;
+    --purple: #663a74;
+    --light-grey: #f2f2f2;
+    --orange: #fc8657;
+
+    --page-bg-start: var(--purple);
+    --page-bg-end: var(--light-grey);
+    --text-color: var(--black);
+    --accent: var(--orange);
+    --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    font-family: 'Shantell Sans', cursive;
+    letter-spacing: 0;
+
+    background-image: linear-gradient(to bottom right, var(--page-bg-start), var(--page-bg-end));
+    color: var(--text-color);
+}
+
+/* Nav */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--page-bg-start);
+  }
+  
+  /* Style the logo */
+  .logo {
+    font-family: 'Climate Crisis';
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+    color: var(--accent);
+  }
+  
+/* Style the main section */
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.proposal {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.choice-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.choice-buttons:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .choice-buttons:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.choice-buttons.choice-active {
+    transform: translateY(-10px);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
+  }
+
+.vote {
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--page-bg-start);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.vote:hover {
+    background-color: var(--accent);
+}
+
+.state {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style the footer */
+.footer {
+    margin-top: auto;
+    background-color: var(--purple);
+    color: #fff;
+    padding: 1rem;
+}
+  
+/* Center the content in the footer */
+.footer-wrapper {
+    display: table-row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+/* Style the social media icons */
+.social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+  
+.social__item {
+    margin-right: 1rem;
+}
+  
+.social__item a img {
+    width: 30px;
+    height: 30px;
+}
+  
+/* Style the copyright text */
+p {
+    position: relative;
+    top: 95%;
+    right: 45vw;
+    font-size: 0.8rem;
+}
